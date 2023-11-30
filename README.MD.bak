@@ -16,8 +16,11 @@ directly on RX mode without a dummy transmission or a power down)
 
 INSTRUCTIONS:
 To use the library, the user has to:
+
 -define the get_tick_us() function (i.e. with an hardware timer)
+
 -place the nrf24l01p_tx_irq() inside the EXTI interrupt handler of the IRQ pin
+
 -define the _weak functions nrf24l01p_tx_callback(), nrf24l01p_rx_callback() and nrf24l01p_max_callback()
 with the code to execute after correct transmission, reception and failed transmission, respectively
 

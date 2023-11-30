@@ -26,10 +26,11 @@ with the code to execute after correct transmission, reception and failed transm
 
 The transceiver can be set up to idle on RX mode or Standby(-I) mode and it will go on TX mode
 only when a transmission is requested, Standby(-I) idle mode is recommended for a simplex setup
-because have a much lower power consumption w.r.t. RX mode
+because have a much lower power consumption w.r.t. RX mode.
+
 This way it can be used for both simplex or half-duplex communication.
 
 TRANSCEIVER SETUP:
 All the user has to do to set up the transceiver is to pass an initialization struct nrf24l01p_init_struct
-to the nrf24l01p_add() function, this function will return an integer (the transceiver ID) thet identifies
+to the nrf24l01p_add() function, this function will return an integer (the transceiver ID) that identifies
 the transceiver and must be pssed to the other library functions
